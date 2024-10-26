@@ -16,5 +16,11 @@ export const dummyData: BlogPost[] = [
         text: "The top shoe for 2024 in running is this generic shoe", 
         image: runningShoes,
         author: "Timothy Scott"
+    },
+    {
+        id: 3, 
+        title: "Coding with Chelsea", 
+        text: "Hey everyone, don't miss my stream where we go over conditional rendering and how to pass props using ReactJS, TypeScript, and style everything with TailwindCSS! #twitch",
+        author: "Chelsea Snider"
     }
 ]

@@ -9,7 +9,7 @@ export default function BlogPostList({
     blogPosts
 }: BlogPostListProps) {
     return (
-        <div className="space-y-2">
+        <div className="space-y-10">
             {blogPosts.map((blogPost) => (
                 <BlogPostItem 
                     key = {blogPost.id}
