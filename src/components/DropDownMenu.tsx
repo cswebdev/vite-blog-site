@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { DropDownMenuProps } from "../types/blogs";
 import "../styles.css";
 import { Settings } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const DropdownMenu: React.FC<DropDownMenuProps> = () => {
    // Declare state variables directly within the DropdownMenu component
@@ -81,6 +82,7 @@ const DropdownMenu: React.FC<DropDownMenuProps> = () => {
                   >
                      Support
                   </a>
+                    <ThemeToggle />
                </div>
             </div>
          )}

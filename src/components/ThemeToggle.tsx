@@ -20,7 +20,7 @@ export default function ThemeToggle() {
    return (
       <button
          onClick={toggleTheme}
-         className="bg-cta hover:bg-cta-active text-cta-text p-2 rounded"
+         className="bg-cta hover:bg-cta-active text-cta-text p-2 rounded w-full"
       >
          Toggle Theme
       </button>
