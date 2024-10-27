@@ -7,7 +7,7 @@ interface BlogPostItemProps {
 
 export default function BlogPostItem({ blogPost }: BlogPostItemProps) {
     return (
-        <div className="flex items-center justify-center md:container md:mx-auto rounded-md bg-gradient-to-r from-blue-100 via-purple-100 to-violet-100 sm:p-1 max-w-full sm:max-w-lg"> 
+        <div className="flex items-center justify-center md:container  rounded-md bg-gradient-to-r from-blue-100 via-purple-100 to-violet-100 sm:p-1 max-w-full sm:max-w-lg"> 
             <div className="bg-white w-full p-0 m-0 rounded-md border border-neutral-200 overflow-hidden">
                 {blogPost.image ? (
                     <img 
