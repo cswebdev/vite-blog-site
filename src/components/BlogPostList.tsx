@@ -2,20 +2,15 @@ import { BlogPost } from "../types/blogs";
 import BlogPostItem from "./BlogPostItem";
 
 interface BlogPostListProps {
-    blogPosts: BlogPost[];
+   blogPosts: BlogPost[];
 }
 
-export default function BlogPostList({
-    blogPosts
-}: BlogPostListProps) {
-    return (
-        <div className="space-y-10 mt-10">
-            {blogPosts.map((blogPost) => (
-                <BlogPostItem 
-                    key = {blogPost.id}
-                    blogPost = {blogPost}
-                />
-            ))}
-        </div>
-    )
+export default function BlogPostList({ blogPosts }: BlogPostListProps) {
+   return (
+      <div className="space-y-10 mt-20">
+         {blogPosts.map((blogPost) => (
+            <BlogPostItem key={blogPost.id} blogPost={blogPost} />
+         ))}
+      </div>
+   );
 }

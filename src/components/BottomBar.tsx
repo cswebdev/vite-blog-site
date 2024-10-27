@@ -1,20 +1,31 @@
 import { Plus } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import DropdownMenu from "./DropDownMenu";
 
 export default function BottomBar() {
-    return (
-        <>
-        <div className="flex flex-row h-20 w-full bg-blue-400 lg:bg-transparent md:bg-blue-400 sm:bg-blue-400 justify-end items-center">
-            <div className="absolute bottom-1 left-0 flex justify-center items-center w-24 h-24 ml-4 rounded-full bg-neutral-700 border-blue-600">avatar</div>
-            <div className="flex flex-row h-full w-1/4 items-center p-1">
-            <button
-            //  className="flex flex-row text-blue-600 font-semibold ring-1 px-3 py-2 rounded-md bg-white text-sm lg:text-lg sm:text-md"
-             className="btn-primary"
-             >Create Post <Plus /></button>
+   return (
+      <>
+         <div className="flex flex-row h-20 w-full bg-white lg:bg-transparent md:bg-white sm:bg-white justify-end items-center">
+            <div className="absolute bottom-0 lg:bottom-1 md:bottom-1 sm:bottom-0 left-0 flex justify-center items-center lg:w-28 lg:h-28 w-20 h-20 ml-4 rounded-full bg-neutral-700 border-blue-600">
+               avatar
             </div>
-            <DropdownMenu options={[]} darkModeEnabled={false} index={0} />
-
-        </div>
-        </>
-    )
+            <div className="flex flex-row h-full items-center p-1"></div>
+            <div className="flex flex-row content-center items-center space-x-2 lg:space-x-15 md:space-x-5">
+               <button className="btn-primary m-6">
+                  Create Post{" "}
+                  <span className="pl-1">
+                     <Plus />
+                  </span>
+               </button>
+               <button className="border-1 p-2 rounded-full">
+                  <MessageCircle
+                     size={32}
+                     className="text-blue-500 hover:fill-blue-500 active:fill-blue-600 active:text-blue-600"
+                  />
+               </button>
+               <DropdownMenu options={[]} darkModeEnabled={false} index={0} />
+            </div>
+         </div>
+      </>
+   );
 }
