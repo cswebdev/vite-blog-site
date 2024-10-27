@@ -7,7 +7,7 @@ interface BlogPostListProps {
 
 export default function BlogPostList({ blogPosts }: BlogPostListProps) {
    return (
-      <div className="space-y-10 mt-20">
+      <div className="space-y-10 my-20">
          {blogPosts.map((blogPost) => (
             <BlogPostItem key={blogPost.id} blogPost={blogPost} />
          ))}

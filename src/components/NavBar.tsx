@@ -5,7 +5,7 @@ export default function NavBar() {
    return (
       <div className="flex flex-row bg-white items-center content-center py-3 px-3 min-w-full justify-between">
          <p className="font-bold lg:text-3xl md:text-2xl lg:text-blue-500 cursor-default ">
-            simplr.social
+            simple.social
          </p>
          <SearchBar />
          <div className="flex flex-row items-center">
