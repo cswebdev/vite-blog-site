@@ -3,6 +3,7 @@ import { DropDownMenuProps } from "../types/blogs";
 import "../styles.css";
 import { Settings } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
+// import UserSettings from "../pages/UserSettings";
 
 const DropdownMenu: React.FC<DropDownMenuProps> = () => {
    // Declare state variables directly within the DropdownMenu component
@@ -65,7 +66,7 @@ const DropdownMenu: React.FC<DropDownMenuProps> = () => {
                      Account Settings
                   </a>
                   <a
-                     href="#"
+                     href="/UserSettings"
                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
                      role="menuitem"
                      tabIndex={-1}
@@ -82,7 +83,7 @@ const DropdownMenu: React.FC<DropDownMenuProps> = () => {
                   >
                      Support
                   </a>
-                    <ThemeToggle />
+                  <ThemeToggle />
                </div>
             </div>
          )}
