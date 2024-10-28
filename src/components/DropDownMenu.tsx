@@ -3,6 +3,7 @@ import { DropDownMenuProps } from "../types/blogs";
 import "../styles.css";
 import { Settings } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
+import { NavLink } from "react-router-dom";
 // import UserSettings from "../pages/UserSettings";
 
 const DropdownMenu: React.FC<DropDownMenuProps> = () => {
@@ -56,17 +57,18 @@ const DropdownMenu: React.FC<DropDownMenuProps> = () => {
                onMouseLeave={() => setIsOpen(false)}
             >
                <div className="py-0 overflow-hidden" role="none">
-                  <a
-                     href="#"
+                  <NavLink
+                     to="/UserSettings"
                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
                      role="menuitem"
                      tabIndex={-1}
                      id="menu-item-0"
+                     onClick={() => setIsOpen(false)}
                   >
-                     Account Settings
-                  </a>
+                     Settings
+                  </NavLink>
                   <a
-                     href="/UserSettings"
+                     href="#"
                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
                      role="menuitem"
                      tabIndex={-1}

@@ -2,7 +2,7 @@ import { Search } from "lucide-react";
 
 export default function SearchBar() {
    return (
-      <form className="w-4/12 border-2 rounded-md ml-8 overflow-hidden">
+      <form className="w-4/12 border-2 rounded-md overflow-hidden">
          <div className="flex">
             <input
                type="text"
