@@ -1,5 +1,5 @@
 import { BlogPost } from "../types/blogs";
-import { Heart, MessageCircle, RefreshCw } from "lucide-react";
+import { Heart, MessageSquareText, RefreshCw } from "lucide-react";
 
 interface BlogPostItemProps {
    blogPost: BlogPost;
@@ -23,12 +23,12 @@ export default function BlogPostItem({ blogPost }: BlogPostItemProps) {
                <div className="my-4 mx-1 text-copy-secondary text-sm sm:text-base overflow-hidden max-h-24">
                   {blogPost.text}
                </div>
-               <div className="flex items-center justify-end gap-3 px-4 py-2 bg-border rounded-md">
+               <div className="flex items-center justify-end gap-3 px-4 py-2  rounded-md">
                   <Heart
                      size={24}
                      className="hover:fill-red-600 hover:stroke-red-300"
                   />
-                  <MessageCircle size={24} />
+                  <MessageSquareText size={24} />
                   <RefreshCw size={24} />
                </div>
             </div>

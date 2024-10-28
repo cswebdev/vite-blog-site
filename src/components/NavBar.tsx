@@ -3,7 +3,7 @@ import SearchBar from "./SearchBar";
 
 export default function NavBar() {
    return (
-      <div className="flex flex-row bg-white items-center content-center py-3 px-3 min-w-full justify-between">
+      <div className="flex flex-row bg-background items-center content-center py-3 px-3 min-w-full justify-between">
          <p className="font-bold lg:text-3xl md:text-2xl lg:text-blue-500 cursor-default ">
             simple.social
          </p>
