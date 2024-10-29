@@ -1,7 +1,7 @@
 export default function LandingPage() {
-   return (
-      <div className="justify-center align-center h-full">
-         Welcome, you've reached the landing page.
-      </div>
-   );
+  return (
+    <div className="align-center h-full justify-center">
+      Welcome, you've reached the landing page.
+    </div>
+  );
 }

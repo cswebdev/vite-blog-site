@@ -7,24 +7,22 @@ import BottomBar from "./components/BottomBar";
 
 function App() {
    return (
-      <div className="relative min-h-screen flex flex-col">
-         <div className="bg-transparent m-0 p-0">
-            <div className="fixed top-0 w-full">
-               <NavBar />
-            </div>
+      <div className="relative flex min-h-screen w-full flex-col">
+         <div className="fixed top-0 w-full">
+            <NavBar />
          </div>
-         <div className="flex-grow pt-1 pb-1">
+         <div className="flex-grow pb-1 pt-1">
             <Routes>
                <Route path="/" element={<HomePage />} />
-               <Route path="/LandingPage" element={<LandingPage />} />
-               <Route path="/UserSettings" element={<UserSettings />} />
+               <Route path="/landingpage" element={<LandingPage />} />
+               <Route path="/usersettings" element={<UserSettings />} />
             </Routes>
          </div>
-
          <div className="fixed bottom-0 w-full">
             <BottomBar />
          </div>
       </div>
    );
 }
+
 export default App;

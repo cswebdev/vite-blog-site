@@ -1,7 +1,7 @@
 export default function PrivacySettings() {
-   return (
-      <>
-         <p>Here are your privacy settings</p>
-      </>
-   );
+  return (
+    <>
+      <p>Here are your privacy settings</p>
+    </>
+  );
 }
