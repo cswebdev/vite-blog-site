@@ -23,16 +23,15 @@ export default function UserSettings() {
          <div className="flex flex-col justify-start mt-32 w-2/3">
             <div className="p-4">
                <div className="grid grid-cols-[200px_1fr_1fr] gap-0">
-                
                   <div className="">
                      <ul className="space-y-5 text-right font-semibold">
                         <li>
                            <button
                               className={`border-b-4 ${
                                  selectedSection === "General"
-                                    ? "border-pink-400"
+                                    ? "border-border"
                                     : "border-transparent"
-                              }  hover:border-pink-400 text-copy-secondary`}
+                              }  hover:border-cta text-copy-secondary`}
                               onClick={() => setSelectedSection("General")}
                            >
                               General

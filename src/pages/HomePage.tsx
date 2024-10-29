@@ -1,4 +1,4 @@
-import BlogPostList from "../components/BlogPostList";
+import BlogPostList from "../components/blogPosts/BlogPostList";
 import { dummyData } from "../data/dummyData";
 
 export default function HomePage() {

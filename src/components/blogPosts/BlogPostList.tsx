@@ -1,4 +1,4 @@
-import { BlogPost } from "../types/blogs";
+import { BlogPost } from "../../types/blogs";
 import BlogPostItem from "./BlogPostItem";
 
 interface BlogPostListProps {

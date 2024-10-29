@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Dark Theme */
 .dark-theme {
    --background: 0, 0, 0;
    --border: 38, 38, 38;
@@ -15,7 +14,6 @@
    background: rgba(var(--background));
 }
 
-/* Light Theme */
 .light-theme {
    --background: 245, 245, 245;
    --border: 212, 212, 212;
@@ -28,34 +26,30 @@
    background: rgba(var(--background));
 }
 
-/* High Contrast Theme */
 .high-contrast {
-   --background: 255, 255, 255;
+   --background: 0, 0, 0;
    --border: 144, 144, 144;
    --card: 0, 0, 0;
-   --copy-primary: 255, 255, 255;
-   --copy-secondary: 255, 255, 255, 0.94;
+   --copy-primary: 255, 255, 0;
+   --copy-secondary: 242, 202, 25;
    --cta: 255, 255, 0;
    --cta-active: 204, 204, 0;
    --cta-text: 255, 255, 255;
    background: rgba(var(--background));
 }
 
-/* Pastel Pink Theme */
 .pastel-pink {
-   --background: 255, 240, 245; /* Light background */
-   --border: 255, 182, 193; /* Border color */
-   --card: 255, 105, 180, 0.13; /* Lighter card color */
-   /* Adjusted text colors for better contrast */
-   --copy-primary: 210, 50, 50; /* Darker primary text for legibility */
-   --copy-secondary: 180, 50, 50; /* Darker secondary text for better readability */
-   --cta: 255, 105, 180; /* CTA color */
-   --cta-active: 219, 112, 147; /* Active CTA color */
-   --cta-text: 255, 255, 255; /* CTA text color */
-   background: rgba(var(--background)); /* Background color */
+   --background: 255, 240, 245;
+   --border: 255, 182, 193;
+   --card: 255, 105, 180, 0.13;
+   --copy-primary: 210, 50, 50;
+   --copy-secondary: 180, 50, 50;
+   --cta: 255, 105, 180;
+   --cta-active: 219, 112, 147;
+   --cta-text: 255, 255, 255;
+   background: rgba(var(--background));
 }
 
-/* Pastel Blue Theme */
 .pastel-blue {
    --background: 240, 248, 255;
    --border: 173, 216, 230;
@@ -69,13 +63,13 @@
 }
 
 .pastel-purple {
-    --background: 240, 240, 255; 
-    --border: 230, 210, 255; 
-    --card: 200, 180, 255; 
-    --copy-primary: 85, 37, 153; 
-    --copy-secondary: 117, 55, 179; 
-    --cta: 150, 100, 255; 
-    --cta-active: 130, 80, 230; 
-    --cta-text: 255, 255, 255; 
-    background: rgba(var(--background)); 
+   --background: 240, 240, 255;
+   --border: 230, 210, 255;
+   --card: 200, 180, 255;
+   --copy-primary: 85, 37, 153;
+   --copy-secondary: 117, 55, 179;
+   --cta: 150, 100, 255;
+   --cta-active: 130, 80, 230;
+   --cta-text: 255, 255, 255;
+   background: rgba(var(--background));
 }

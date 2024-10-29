@@ -1,5 +1,4 @@
 import ThemeButton from "../ThemeButton";
-import ThemeToggle from "../ThemeToggle";
 
 export default function GeneralSettings() {
    const setTheme = (themeClass: string) => {
@@ -9,12 +8,13 @@ export default function GeneralSettings() {
          "high-contrast",
          "pastel-pink",
          "pastel-blue",
-         "pastel-purple" // Ensure all themes are removed
+         "pastel-purple"
       );
       document.body.classList.add(themeClass);
       localStorage.setItem("theme", themeClass);
    };
 
+   // themes for theme preview
    const themes = [
       {
          title: "Light Theme",
@@ -70,7 +70,6 @@ export default function GeneralSettings() {
       <>
          <h4>General Settings</h4>
          <div className="pt-10">Theme Selection</div>
-         <ThemeToggle />
          <div className="container p-4 gap-0">
             <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-4">
                {themes.map((theme, index) => (

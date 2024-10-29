@@ -6,7 +6,7 @@ export default function NavBar() {
    return (
       <div className="flex flex-row bg-background items-center content-center py-3 px-3 min-w-full justify-between">
          <p className="font-bold lg:text-4xl md:text-2xl lg:text-blue-500 cursor-default ">
-            simple.social
+            simply.social
          </p>
          <SearchBar />
          <div className="flex flex-row items-center">
@@ -30,6 +30,7 @@ export default function NavBar() {
                   About
                </a>
             </div>
+            {/* revisiting idea where to place this button */}
             {/* <button className="btn-primary">Login</button> */}
          </div>
       </div>
