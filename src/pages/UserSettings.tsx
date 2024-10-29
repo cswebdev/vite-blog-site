@@ -23,9 +23,7 @@ export default function UserSettings() {
          <div className="flex flex-col justify-start mt-32 w-2/3">
             <div className="p-4">
                <div className="grid grid-cols-[200px_1fr_1fr] gap-0">
-                  {" "}
-                  {/* Set a fixed width for the first column */}
-                  {/* left col */}
+                
                   <div className="">
                      <ul className="space-y-5 text-right font-semibold">
                         <li>

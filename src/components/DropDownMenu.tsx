@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { DropDownMenuProps } from "../types/blogs";
 import "../styles.css";
 import { Settings } from "lucide-react";
-import ThemeToggle from "./ThemeToggle";
+// import ThemeToggle from "./ThemeToggle";
 import { NavLink } from "react-router-dom";
 // import UserSettings from "../pages/UserSettings";
 
@@ -85,7 +85,7 @@ const DropdownMenu: React.FC<DropDownMenuProps> = () => {
                   >
                      Support
                   </a>
-                  <ThemeToggle />
+                  {/* <ThemeToggle /> */}
                </div>
             </div>
          )}

@@ -11,6 +11,12 @@ export default function ThemeToggle() {
       localStorage.setItem("theme", theme);
    }, [theme]);
 
+   useEffect(() => {
+      const storedTheme = localStorage.getItem("theme") || "dark-theme";
+      document.body.classList.add(storedTheme);
+      setTheme(storedTheme);
+   }, []);
+
    const toggleTheme = () => {
       setTheme((prev) =>
          prev === "dark-theme" ? "light-theme" : "dark-theme"
@@ -20,7 +26,7 @@ export default function ThemeToggle() {
    return (
       <button
          onClick={toggleTheme}
-         className="bg-cta hover:bg-cta-active text-cta-text p-2 rounded w-full"
+         className="bg-cta hover:bg-cta-active text-cta-text p-2 rounded w-100"
       >
          Toggle Theme
       </button>
