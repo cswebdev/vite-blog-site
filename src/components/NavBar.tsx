@@ -5,13 +5,20 @@ import SearchBar from "./SearchBar";
 export default function NavBar() {
    const location = useLocation();
 
-   const isLandingPage = location.pathname === "/landingpage";
+   const isLandingPage = location.pathname === "/";
 
    return (
       <div className="flex flex-row content-center items-center justify-between bg-background px-3 py-3">
-         <p className="cursor-default font-bold md:text-2xl lg:text-4xl lg:text-blue-500">
-            simply.social
-         </p>
+         {!isLandingPage && (
+            <p className="cursor-default font-bold md:text-2xl lg:text-4xl lg:text-blue-500">
+               simply.social
+            </p>
+         )}
+         {isLandingPage && (
+            <p className="cursor-default font-bold md:text-2xl lg:text-4xl lg:text-blue-500">
+               simply.social
+            </p>
+         )}
 
          {!isLandingPage && (
             <>
@@ -20,7 +27,7 @@ export default function NavBar() {
                   <div className="flex list-none flex-row gap-x-4 text-2xl text-blue-500">
                      <NavLink
                         className="border-b-2 border-transparent hover:border-b-2 hover:border-b-blue-600 hover:text-blue-600"
-                        to="/"
+                        to="/homepage"
                      >
                         Home
                      </NavLink>

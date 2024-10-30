@@ -1,7 +1,6 @@
 import { landingPageData } from "../data/landingPage";
 import "../styles.css";
 
-
 export default function LandingPage() {
    return (
       <div className="hero-background flex size-full flex-col bg-blue-500 text-white">
@@ -38,6 +37,12 @@ export default function LandingPage() {
                   </div>
                ))}
             </div>
+         </section>
+         <section className="flex justify-center">
+            <p className="text-4xl leading-relaxed">
+               {landingPageData.callToAction.text}
+            </p>
+            <button>Join Today</button>
          </section>
       </div>
    );
