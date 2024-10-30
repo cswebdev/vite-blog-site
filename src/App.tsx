@@ -7,11 +7,11 @@ import BottomBar from "./components/BottomBar";
 
 function App() {
    return (
-      <div className="relative flex min-h-screen w-full flex-col">
+      <div className="flex flex-col min-h-screen">
          <div className="fixed top-0 w-full">
             <NavBar />
          </div>
-         <div className="flex-grow pb-1 pt-1">
+         <div className="flex-grow pt-16 pb-16 overflow-y-auto">
             <Routes>
                <Route path="/" element={<HomePage />} />
                <Route path="/landingpage" element={<LandingPage />} />
