@@ -1,4 +1,4 @@
-import { BlogPost } from "../../types/Types";
+import { BlogPost } from "../../types/types";
 import { Heart, MessageSquareText, RefreshCw } from "lucide-react";
 
 interface BlogPostItemProps {
