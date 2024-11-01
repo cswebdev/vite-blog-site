@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { landingPageData } from "../data/landingPage";
 import "../styles.css";
 
@@ -13,12 +14,15 @@ export default function LandingPage() {
                   {landingPageData.subheadline}
                </p>
                <div className="flex justify-start">
-                  <button className="group relative inline-flex h-16 w-40 items-center justify-center overflow-hidden rounded-md border border-neutral-200 bg-white px-6 text-lg font-semibold text-blue-500 transition-all duration-100 [box-shadow:5px_5px_rgb(81_81_81)] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:3px_3px_rgb(82_82_82)]">
+                  <NavLink
+                     to="/signup"
+                     className="group relative inline-flex h-16 w-40 items-center justify-center overflow-hidden rounded-md border border-neutral-200 bg-white px-6 text-lg font-semibold text-blue-500 transition-all duration-100 [box-shadow:5px_5px_rgb(81_81_81)] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:3px_3px_rgb(82_82_82)]"
+                  >
                      <span className="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-blue-400/90 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span>
                      <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
                         Join Now
                      </span>
-                  </button>
+                  </NavLink>
                </div>
             </section>
          </div>

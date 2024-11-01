@@ -4,6 +4,7 @@ import LandingPage from "./pages/LandingPage";
 import UserSettings from "./pages/UserSettings";
 import NavBar from "./components/NavBar";
 import BottomBar from "./components/BottomBar";
+import SignUp from "./pages/SignUp";
 
 function App() {
    const location = useLocation();
@@ -28,7 +29,7 @@ function App() {
                <Route path="/homepage" element={<HomePage />} />
                <Route path="/landingpage" element={<LandingPage />} />
                <Route path="/usersettings" element={<UserSettings />} />
-               {/* <Route path="/signup" element={<Si} */}
+               <Route path="/signup" element={<SignUp />} />
             </Routes>
          </div>
          <div className="fixed bottom-0 w-full">
