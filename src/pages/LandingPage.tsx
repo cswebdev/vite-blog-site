@@ -46,7 +46,7 @@ export default function LandingPage() {
             <p className="text-4xl leading-relaxed">
                {landingPageData.callToAction.text}
             </p>
-            <button>Join Today</button>
+            <NavLink to="/signup">Join Today</NavLink>
          </section>
       </div>
    );

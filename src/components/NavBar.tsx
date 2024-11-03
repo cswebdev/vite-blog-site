@@ -8,7 +8,7 @@ export default function NavBar() {
    const isLandingPage = location.pathname === "/";
 
    return (
-      <div className="flex flex-row content-center items-center justify-between bg-background px-3 py-3">
+      <div className="flex flex-row content-center items-center justify-between bg-gray-50 px-3 py-3 ">
          {!isLandingPage && (
             <p className="cursor-default font-bold md:text-2xl lg:text-4xl lg:text-blue-500">
                simply.social

@@ -14,7 +14,7 @@ function App() {
    return (
       <div className="flex min-h-screen flex-col">
          {!isLandingPage && (
-            <div className="fixed top-0 min-w-full max-w-full">
+            <div className="fixed top-0 min-w-full max-w-full z-50">
                <NavBar />
             </div>
          )}
@@ -23,7 +23,7 @@ function App() {
                <NavBar />
             </div>
          )}
-         <div className="flex-grow overflow-y-auto pb-16 pt-16">
+         <div className="flex-grow overflow-y-auto ">
             <Routes>
                <Route path="/" element={<LandingPage />} />
                <Route path="/homepage" element={<HomePage />} />
