@@ -1,4 +1,4 @@
-import { CircleUserRound } from "lucide-react";
+import { CircleUserRound, Plus } from "lucide-react";
 import { User } from "../../types/types";
 import SideBarMenu from "./SidebarMenu";
 
@@ -27,6 +27,12 @@ export default function SideBar({ user }: SideBarProps) {
                </h4>
                <p className="text-neutral-400">200 / 2.4k</p>
                <SideBarMenu />
+               <button className="btn-primary m-6">
+                  Create Post
+                  <span className="pl-1">
+                     <Plus />
+                  </span>
+               </button>
             </div>
          ) : (
             <div className="flex items-center mt-28 flex-col fixed left-22">

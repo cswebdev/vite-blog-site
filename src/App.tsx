@@ -3,7 +3,7 @@ import HomePage from "./pages/HomePage";
 import LandingPage from "./pages/LandingPage";
 import UserSettings from "./pages/UserSettings";
 import NavBar from "./components/NavBar";
-import BottomBar from "./components/BottomBar";
+// import BottomBar from "./components/BottomBar";
 import SignUp from "./pages/SignUp";
 
 function App() {
@@ -32,9 +32,9 @@ function App() {
                <Route path="/signup" element={<SignUp />} />
             </Routes>
          </div>
-         <div className="fixed bottom-0 w-full">
+         {/* <div className="fixed bottom-0 w-full">
             <BottomBar />
-         </div>
+         </div> */}
       </div>
    );
 }
