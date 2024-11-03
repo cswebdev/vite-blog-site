@@ -24,21 +24,28 @@ export default function SideBarMenu() {
       { tag: "Chat", icon: <MessageCircle />, navLink: "/chat" },
       { tag: "Communities", icon: <Users />, navLink: "/communities" },
       { tag: "Profile", icon: <User />, navLink: "/profile" },
-      { tag: "Settings", icon: <Settings />, navLink: "/settings" },
+      { tag: "Settings", icon: <Settings />, navLink: "/UserSettings" },
    ]);
 
    return (
-      <div className="w-1/2">
+      <div className="w-1/2 text-cta-text">
          {options.map((option, index) => (
-            <NavLink
-               key={index}
-               to={option.navLink} 
-               className="flex items-center my-3 text-lg hover:font-semibold p-1 active:font-bold"
-           
-            >
-               <span className="pr-1">{option.icon}</span>
-               <p>{option.tag}</p>
-            </NavLink>
+            <div key={index} className="flex flex-col">
+               <NavLink
+                  to={option.navLink}
+                  className="flex items-center my-3 text-lg hover:font-semibold p-1 active:font-bold"
+               >
+                  <span className="pr-1">{option.icon}</span>
+                  <p>{option.tag}</p>
+               </NavLink>
+               {/* {option.tag === "Settings" && (
+                  <DropdownMenu
+                     options={[]}
+                     darkModeEnabled={false}
+                     index={0}
+                  />
+               )} */}
+            </div>
          ))}
       </div>
    );

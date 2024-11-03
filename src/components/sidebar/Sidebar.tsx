@@ -22,9 +22,7 @@ export default function SideBar({ user }: SideBarProps) {
                      <CircleUserRound className="w-full h-full text-neutral-700 " />
                   )}
                </div>
-               <h4 className="font-bold text-cta-text-active mb-2">
-                  {user.username}
-               </h4>
+               <h4 className="font-bold text-cta-text mb-2">{user.username}</h4>
                <p className="text-neutral-400">200 / 2.4k</p>
                <SideBarMenu />
                <button className="btn-primary m-6">

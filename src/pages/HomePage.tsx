@@ -1,5 +1,5 @@
 import BlogPostList from "../components/blogPosts/BlogPostList";
-import SideBar from "../components/sidebar/sidebar";
+import SideBar from "../components/sidebar/Sidebar";
 import { dummyData } from "../data/dummyData";
 import { User } from "../types/types";
 
